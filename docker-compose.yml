@@ -1,0 +1,11 @@
+services:
+  postgres:
+    container_name: gestao_vagas_postgres
+    image: postgres
+    ports:
+      - 5433:5432
+    environment:
+     - POSTGRES_USER=root
+     - POSTGRES_PASSWORD=root
+     - POSTGRES_DB=gestao_vagas
+
